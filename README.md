@@ -6,7 +6,9 @@ Our team collected the dataset from January 1 2010 to April 10 2023. The dataset
 
 Link to the dataset: https://intip.in/datasetcuaca
 
-In this GitHub directory there will be several models of training results from the datasets we collected 
+Use the linecutter.py script to delete the first 3 lines of each csv in the dataset.
+
+In this GitHub directory there will be several models of training results from the datasets we collected. 
 
 If you want to do training, then do the following steps:
 1. Extract the capstone.zip file
