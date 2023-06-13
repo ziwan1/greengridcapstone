@@ -1,23 +1,22 @@
 # New Renewable Energy Placement Recommendation System for Solar Panels Based on the Location of East Java District Using Geospatial Analysis, Statistical Approaches, and Deep Learning
 
-Tim kami mengumpulkan dataset dalam kurun waktu 1 Januari 2010 hingga 10 April 2023. Dataset yang dikumpulkan terdiri dari data geografis cuaca kecamatan berupa kumpulan temperatur, kelembaban, tekanan udara, curah hujan, tutupan awan, radiasi matahari, tingkat penyinaran matahari langsung, dan kecepatan angin. Dataset ini kami dapatkan dari website open meteo. Dataset ini mencatat per jamnya perubahan dari data-data di atas dalam kurun waktu 1 Januari 2010 hingga 10 April 2023
+Our team collected the dataset from January 1 2010 to April 10 2023. The dataset consists of sub-district weather geographic data in the form of a collection of temperature, humidity, air pressure, rainfall, cloud cover, solar radiation, direct solar irradiation level, and wind speed. We got this dataset from the open meteo website. This dataset records the hourly changes of the above data in the period of January 1 2010 to April 10, 2023. We're able to get the dataset by scraping the openmeteo API using the script contained in the apiscraper.ipynb file.
 
-Dataset ada di https://intip.in/datasetcuaca
+Link to the dataset: https://intip.in/datasetcuaca
 
-Dataset pembuatan model ada di https://intip.in/datasetv1
+Use the linecutter.py script to delete the first 3 lines of each csv in the dataset.
 
-Dataset tersebut kami dapatkan dengan scraping API openmeteo menggunakan script yang terdapat pada file apiscraper.ipynb
+In this GitHub directory there will be several models of training results from the datasets we collected. 
 
-Pada directory github ini akan terdapat beberapa model hasil training dari dataset yang kami kumpulkan 
+If you want to do training, then do the following steps:
+1. Extract the capstone.zip file
+2. Add the CSV contained in the dataset / add your own dataset
+3. Change the destination in the ts_forecasting.py file to match your directory
+4. Use the conda env create -f environment.yml command according to the .yml file found on this Github (recommended renaming the environment)
+5. Activate the imported environment with the command conda activate <environment_name>
+6. Open a command prompt and cd to the unzipped directory
+7. Run the Python command
+8. Wait for the training to finish
 
-Jika ingin melakukan training, maka lakukan langkah berikut
-
-1. Extract file capstone.zip
-2. Tambahkan CSV yang terdapat pada dataset/tambahkan dataset sendiri
-3. Ubah destinasi dalam file ts_forecasting.py agar sesuai dengan directory anda
-4. Gunakan command conda env create -f environment.yml sesuai dengan file .yml yang terdapat pada github ini (disarankan diganti nama environmentnya)
-5. Aktifkan environment hasil import dengan command conda activate <environment_name>
-6. Buka command prompt dan cd ke directory hasil unzip
-7. Jalankan command python
-8. Tunggu hingga training selesai
+This model was developed to forecast Indonesian cities short and long-term weather using LSTM-based deep learning. The dataset was collected and preprocessed, including handling time data and applying feature engineering techniques. The model architecture consists of an input layer, an LSTM layer, and fully connected layers. The model was trained using Mean Squared Error loss and Adam optimizer. Geospatial and statistical features were incorporated into the dataset. Model performance was evaluated using Root Mean Squared Error and R-squared metrics. The model's forecasted results were visualized and saved. The entire process was executed using TensorFlow and various supporting libraries. Adjust the hours for the forecasting results in def construct_lt_prediction and forecast_df['time'] = palette.reset_index()['time'][0:1000]
 
