@@ -20,3 +20,6 @@ If you want to do training, then do the following steps:
 
 This model was developed to forecast Indonesian cities short and long-term weather using LSTM-based deep learning. The dataset was collected and preprocessed, including handling time data and applying feature engineering techniques. The model architecture consists of an input layer, an LSTM layer, and fully connected layers. The model was trained using Mean Squared Error loss and Adam optimizer. Geospatial and statistical features were incorporated into the dataset. Model performance was evaluated using Root Mean Squared Error and R-squared metrics. The model's forecasted results were visualized and saved. The entire process was executed using TensorFlow and various supporting libraries.
 
+# CC README
+
+# MD README
