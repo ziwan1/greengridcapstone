@@ -1,5 +1,7 @@
 # New Renewable Energy Placement Recommendation System for Solar Panels Based on the Location of East Java District Using Geospatial Analysis, Statistical Approaches, and Deep Learning
 
+# ML README
+
 Our team collected the dataset from January 1, 2010 to April 10, 2023. The dataset consists of sub-district weather geographic data in the form of a collection of temperature, humidity, air pressure, rainfall, cloud cover, solar radiation, direct solar irradiation level, and wind speed. We got this dataset from the open meteo website. This dataset records the hourly changes of the above data in the period of January 1, 2010 to April 10, 2023. We're able to get the dataset by scraping the openmeteo API using the script contained in the apiscraper.ipynb file.
 
 Link to the dataset: https://intip.in/datasetcuaca
