@@ -10,7 +10,7 @@ Use the linecutter.py script to delete the first 3 lines of each csv in the data
 
 In this GitHub directory there will be several models of training results from the datasets we collected. 
 
-If you want to do training, then do the following steps:
+Other regions can be trained with the following steps:
 1. Extract the capstone.zip file
 2. Add the CSV contained in the dataset / add your own dataset
 3. Change the destination in the ts_forecasting.py file to match your directory
