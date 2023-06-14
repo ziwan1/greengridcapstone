@@ -23,5 +23,19 @@ Other regions can be trained with the following steps:
 This model was developed to forecast Indonesian cities short and long-term weather using LSTM-based deep learning. The dataset was collected and preprocessed, including handling time data and applying feature engineering techniques. The model architecture consists of an input layer, an LSTM layer, and fully connected layers. The model was trained using Mean Squared Error loss and Adam optimizer. Geospatial and statistical features were incorporated into the dataset. Model performance was evaluated using Root Mean Squared Error and R-squared metrics. The model's forecasted results were visualized and saved. The entire process was executed using TensorFlow and various supporting libraries. Adjust the hours for the forecasting results in def construct_lt_prediction and forecast_df['time'] = palette.reset_index()['time'][0:1000]
 
 # CC README
+API endpoint can be created with the following steps:
+1. Clone this repository
+2. Run this command: <br>
+npm install @google-cloud/storage <br>
+npm install body-parser <br>
+npm install express <br>
+npm install express-session <br>
+npm install mysql
+3. Create a Cloud SQL Instance and database for your application
+4. Note the public IP SQL instance, database name, and SQL password
+5. Change the database configuration in database.js use the information noted in the previous steps
+6. Create a service account, grant the roles as Storage Admin, and then download the JSON key
+7. Copy and paste the JSON key to the serviceaccountkey.json file
+8. Deploy to app engine to create an endpoint
 
 # MD README
