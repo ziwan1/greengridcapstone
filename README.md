@@ -25,11 +25,6 @@ This model was developed to forecast Indonesian cities short and long-term weath
 # CC README
 Our team use Express.js as Node.js framework to build an API for register, login, and predict. For register and login, we use MySQL database from CloudSQL as user data storage. For predict, we first put ML model outputs in .png format to cloud storage, then the API provides image urls from the cloud storage according to the district and sub-district input from the user.
 
-We have deployed API to App Engine in Google Cloud Platform, and there are 3 endpoints: <br>
-https://bangkit-capstone-388003.et.r.appspot.com/register (register) <br>
-https://bangkit-capstone-388003.et.r.appspot.com/login (login) <br>
-https://bangkit-capstone-388003.et.r.appspot.com/predict/:kabupaten/:kecamatan (predict)
-
 API endpoint can be created with the following steps:
 1. Clone this repository
 2. Run this command: <br>
